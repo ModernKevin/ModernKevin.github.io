@@ -16,7 +16,7 @@ nav {
    margin-bottom: 20px;
     display: flex;
     padding: 10px;
-    border-radius: 30% 30%;
+    border-radius: 4% 4% 4%;
     border: 1rem solid rgb(255, 255, 255);;
 }
 h1 {
