@@ -1,9 +1,10 @@
 body {
   margin: 0px;
+  
 }
 
 canvas {
-  background-color: lightgray;
+  background-image: url("https://media.wired.co.uk/photos/61a4f8c0424af1246ccd29d1/16:9/w_2560%2Cc_limit/GettyImages-1176555906.jpg");
 }
 
 img {
