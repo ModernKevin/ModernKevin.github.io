@@ -6,8 +6,8 @@ body {
 #board {
   width: 440px;
   height: 440px;
-  border: 1px solid white;
-  background-color: black;
+  border: 1px solid #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
 #score, #highScore {

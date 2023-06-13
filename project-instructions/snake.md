@@ -591,7 +591,7 @@ HINT: If the snake's tail is moving right, the next snakeSquare should be one
 column to the left. If the column is moving up, the next snakeSquare should be
 one row below.
 
-**NOTE: Completing this TODO will not make your snake grow properly. It will 
+2222222222222222222222222**NOTE: Completing this TODO will not make your snake grow properly. It will 
 simply create each new snakeSquare at the point that the snake ate its first 
 apple. Complete the next TODO to make your snake properly grow.**
 
@@ -692,7 +692,7 @@ It seems a little weird that we have a while loop that relies on
 
 While this code may generate a random location within the confines of our board,
 it does not guarantee that the space is unoccupied by the snake.
-
+222222222222222222222
 **Goal: Modify the code block in the `while` loop so that if the randomly 
 generated position is occupied by any part of the snake's body, it loops again**
 
