@@ -220,10 +220,11 @@ function hasCollidedWithSnake() {
   head and each part of the snake's body also knows its own row and column.
   
   */
-  
-    if (snake.head.column === snake.body.column && snake.head.row === snake.body.row) {
+  for (var i = 1; i <= snake.body.length - 1; i++) {
+    if (snake.head.column === snake.body[i].column && snake.head.row === snake.body[i].row) {
       return true;
     }
+  }
 
 }
 
@@ -349,6 +350,12 @@ function getRandomAvailablePosition() {
     randomPosition.row = Math.floor(Math.random() * ROWS);
     spaceIsAvailable = true;
     
+    for (var i = snake.body.length - 1; i >= 0; i = i - 1) {
+      if (snake.body[i].column === randomPosition.column && snake.body[i].row === randomPosition.row) {
+        spaceIsAvailable = false
+      }
+    }
+
     /*
     TODO 13: After generating the random position determine if that position is
     not occupied by a snakeSquare in the snake's body. If it is then set 
