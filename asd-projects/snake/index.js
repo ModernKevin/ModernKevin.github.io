@@ -116,7 +116,6 @@ function moveSnake() {
   if (snake.head.direction === 'left') {
     snake.head.column = snake.head.column - 1;
   }
-  repositionSquare(snake.head);
 
   if (snake.head.direction === 'right') {
     snake.head.column = snake.head.column + 1;
@@ -128,7 +127,8 @@ function moveSnake() {
   if (snake.head.direction === 'down') {
       snake.head.row = snake.head.row + 1;
     }
-  
+    repositionSquare(snake.head);
+
 }
 
 function checkForNewDirection(event) {
